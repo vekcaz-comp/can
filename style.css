@@ -1,0 +1,192 @@
+*{
+
+  box-sizing: border-box;
+}
+
+
+body{
+ 
+  font-family: "Playfair Display";
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+}
+
+
+#menu{
+      height: 160px;
+      padding: 0 20px;
+      background-color: black;
+}
+
+
+#logo{
+      font-size: 60px;
+      font-weight: 100;
+      line-height: 20px;
+      color: wheat;
+     padding-top: 60px;
+      margin-left: 30px;
+      
+      
+}
+
+nav{
+
+  float: right;
+  line-height: 40px;
+  margin: -15px 20px 15px;
+
+  
+
+}
+
+nav a:link{
+   text-decoration: none;
+   margin-right: 20px;
+   color: wheat;
+}
+
+nav a:hover{
+    border-bottom:2px solid
+    wheat
+}
+
+nav a:visited{
+   text-decoration: none;
+   margin-right: 25px;
+   color:wheat
+
+}
+
+.ikon{
+     margin-right: 5px;
+     font-size: 17px;
+
+}
+
+#anasayfa {
+  height: 600px;
+  background-image: url("../img/b1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+#siyah{
+
+height: 600px;
+background-color: black;
+opacity: 0.5;
+
+background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+
+
+}
+
+#içerik{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    right: 50%;
+    transition: -50,-50;
+    font-size: 20px;
+    color: sandybrown;
+
+    position: relative;
+  z-index: 2;
+
+}
+
+#hakkimda{
+background-color: #f8f9fa;
+padding: 50PX;
+text-align: center;
+text-transform: capitalize;
+font-weight: 600;
+
+
+}
+
+h3{
+font-size: 55px;
+color: #003666;
+text-shadow: 0px 1px 1px
+black;
+font-weight: 100;
+font-size: 70px;
+
+}
+
+#container{
+width: 1220px;
+height: auto;
+margin: auto;
+
+}
+
+#sol{
+float: left;
+border-right: 3px solid #445c6e;
+font-size: 30px;
+width: 600px;
+color: #445c6e;
+height: 70px;
+margin-bottom: 10px;
+margin-right: 50px;
+}
+
+#h5sol{
+line-height: 1.6;
+font-size: 50px;
+font-weight: 600;
+
+}
+
+#h5sol , #sag {
+  margin: 0;
+  padding: 0;
+  margin-top: 20x;
+}
+
+span{
+  font-size: 50px;
+  margin-right: 5px;
+  line-height: 42px;
+  color: #003666;
+  font-weight: 600;
+  float: left;
+}
+
+#sag{
+float: right;
+width: 430px;
+color: #999999;
+text-align: center;
+letter-spacing: 1px;
+font-size: 15px;
+line-height: 1.5;
+font-weight: 100;
+margin-right: 100px;
+margin-top: 15px;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+
+}
+
+.mt100{
+  margin-top: 100px;
+
+
+}
