@@ -67,7 +67,7 @@ nav a:visited{
 
 #anasayfa {
   height: 600px;
-  background-image: url("../img/b1.jpg");
+  background-image: url("b1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
