@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
           <head>
     <meta charset="utf-8">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,6 +10,7 @@
 
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/998692309a.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script> 
     <title>Can Aksoy</title>
   </head>
   <body>
@@ -29,7 +31,7 @@
 <section id="anasayfa">
        <div id="siyah"></div>
        <div id="içerik">
-       <h2>Step by step for succes </h2>
+       <h2>Step by step for success</h2>
        <hr width=320 align=left>
        <p>
        
@@ -56,19 +58,33 @@
     <img src="about.jpg" alt=""
     class="img-fluid mt100">
 
-      <p id="pson"></p>
+      <p id="pson"> Java, PHP&Python, Html5 and more languages are in my work area. 
 
-
-
+      </p>
   </div>
-
 </section>
 
+<section id="iletisim">
+  <h3>Contact</h3>
+  <div id="container">
+    <!-- Loading Spinner (anlatacak kısmı) -->
+<div id="loading" style="display:none;">
+  <div class="spinner"></div>
+  <p>Sending your message...</p>
+</div>
 
+    <form action="contact.php" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="iletisim-bilgi">
+      <p>or just email 👉 <a href="mcanaksoy06@gmail.com">mcanaksoy06@gmail.com</a></p>
+    </div>
+  </div>
+</section>
 </body>
-
-
-
 
 
 </html>
