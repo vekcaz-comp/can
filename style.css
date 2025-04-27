@@ -1,73 +1,46 @@
-*{
 
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-
-body{
- 
-  font-family: "Playfair Display";
-  font-optical-sizing: auto;
- 
-  font-style: normal;
+body {
+  font-family: "Playfair Display", serif;
 }
-
-
-#menu{
-      height: 160px;
-      padding: 0 20px;
-      background-color: black;
+#menu {
+  background: black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-
-
-#logo{
-      font-size: 60px;
-      font-weight: 100;
-      line-height: 20px;
-      color: wheat;
-     padding-top: 60px;
-      margin-left: 30px;
-      
-      
+#logo {
+  font-size: 40px;
+  color: wheat;
 }
-
-nav{
-
-  float: right;
-  line-height: 40px;
-  margin: -15px 20px 15px;
-
-  
-
+nav {
+  display: flex;
+  gap: 20px;
 }
-
-nav a:link{
-   text-decoration: none;
-   margin-right: 20px;
-   color: wheat;
+nav a {
+  color: wheat;
+  text-decoration: none;
+  font-size: 18px;
 }
-
-nav a:hover{
-    border-bottom:2px solid
-    wheat
+nav a:hover {
+  border-bottom: 2px solid wheat;
 }
-
-nav a:visited{
-   text-decoration: none;
-   margin-right: 25px;
-   color:wheat
-
+.ikon {
+  margin-right: 5px;
 }
-
-.ikon{
-     margin-right: 5px;
-     font-size: 17px;
-
+img {
+  max-width: 100%;
+  height: auto;
 }
-
 #anasayfa {
-  height: 600px;
-  background-image: url("b1.jpg");
+  height: 100vh;
+  background-image: url('b1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -75,137 +48,71 @@ nav a:visited{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  overflow: hidden;
+  text-align: center;
 }
-#siyah{
-
-height: 600px;
-background-color: black;
-opacity: 0.5;
-
-background-color: rgba(0, 0, 0, 0.5);
+#siyah {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 1;
-
-
+  background: rgba(0, 0, 0, 0.5);
 }
-
-#içerik{
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    right: 50%;
-    transition: -50,-50;
-    font-size: 20px;
-    color: sandybrown;
-
-    position: relative;
+#içerik {
+  position: relative;
   z-index: 2;
-
+  color: sandybrown;
 }
-
-#hakkimda{
-background-color: #f8f9fa;
-padding: 50PX;
-text-align: center;
-text-transform: capitalize;
-font-weight: 600;
-
-
+#hakkimda {
+  background: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
 }
-
-h3{
-font-size: 55px;
-color: #003666;
-text-shadow: 0px 1px 1px
-black;
-font-weight: 100;
-font-size: 70px;
-
-}
-
-#container{
-width: 1220px;
-height: auto;
-margin: auto;
-
-}
-
-#sol{
-float: left;
-border-right: 3px solid #445c6e;
-font-size: 30px;
-width: 600px;
-color: #445c6e;
-height: 70px;
-margin-bottom: 10px;
-margin-right: 50px;
-}
-
-#h5sol{
-line-height: 1.6;
-font-size: 50px;
-font-weight: 600;
-
-}
-
-#h5sol , #sag {
-  margin: 0;
-  padding: 0;
-  margin-top: 20x;
-}
-
-span{
+h3 {
   font-size: 50px;
-  margin-right: 5px;
-  line-height: 42px;
   color: #003666;
-  font-weight: 600;
-  float: left;
+  margin-bottom: 20px;
 }
-
-#sag{
-float: right;
-width: 430px;
-color: #999999;
-text-align: center;
-letter-spacing: 1px;
-font-size: 15px;
-line-height: 1.5;
-font-weight: 100;
-margin-right: 100px;
-margin-top: 15px;
+#container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-
-.img-fluid{
-  max-width: 100%;
-  height: auto;
-
+#sol, #sag {
+  flex: 1 1 300px;
 }
-
-.mt100{
-  margin-top: 100px;
-
-
+#sol {
+  border-right: 3px solid #445c6e;
+  padding-right: 20px;
 }
-
+#h5sol {
+  font-size: 30px;
+}
+span {
+  font-size: 50px;
+  color: #003666;
+}
+#sag {
+  font-size: 15px;
+  color: #999;
+}
 #iletisim {
-  padding: 60px 0;
-  background-color: #f9f9f9;
+  padding: 50px 20px;
+  background: #f9f9f9;
   text-align: center;
 }
 
 #iletisim h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 30px;
+  color: #003666;
 }
 
 #contact-form {
-  max-width: 600px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -215,67 +122,51 @@ margin-top: 15px;
 #contact-form textarea {
   padding: 12px;
   border: 1px solid #ccc;
-  font-family: inherit;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 #contact-form button {
-  background-color: black;
-  color: white;
   padding: 12px;
+  background: black;
+  color: white;
   border: none;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 #contact-form button:hover {
-  background-color: #333;
+  background: #333;
+}
+
+#email-link {
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 #iletisim-bilgi {
   margin-top: 20px;
-  font-size: 16px;
-  color: #444;
 }
-
-#iletisim-bilgi a {
-  color: black;
-  text-decoration: underline;
+@media (max-width: 768px) {
+  #menu {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #anasayfa {
+    background-attachment: scroll;
+    height: auto;
+    padding: 100px 0;
+  }
+  #içerik {
+    font-size: 16px;
+  }
 }
-
-#loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 9999;
-}
-
-.spinner {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #333;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-#loading p {
-  color: #fff;
-  margin-top: 20px;
-  font-size: 18px;
-}
-
